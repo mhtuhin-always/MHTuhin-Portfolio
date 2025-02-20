@@ -596,3 +596,400 @@ body .transition {
 [js-line-animation] .line {
 	overflow: hidden;
 }
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child,
+.w-richtext > div:first-child > :first-child {
+	margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext > :last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off,
+.transition,
+.no-click,
+.about-webflow_circle-reflection-wrapper,
+.about-webflow_reflection,
+.transition-flaps.is-home-1,
+.transition-flaps.is-home-2 {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+	pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium,
+.container-small,
+.container-large {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+/*Reset selects, buttons, and links styles*/
+.w-input,
+.w-select,
+a {
+	color: inherit;
+	text-decoration: inherit;
+	font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." at 100% width */
+.truncate-width {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+}
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+	display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+	display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+	.hide,
+	.hide-tablet {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hide-mobile-landscape {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.hide-mobile {
+		display: none !important;
+	}
+}
+
+.margin-0 {
+	margin: 0rem !important;
+}
+.padding-0 {
+	padding: 0rem !important;
+}
+.spacing-clean {
+	padding: 0rem !important;
+	margin: 0rem !important;
+}
+.margin-top {
+	margin-right: 0rem !important;
+	margin-bottom: 0rem !important;
+	margin-left: 0rem !important;
+}
+.padding-top {
+	padding-right: 0rem !important;
+	padding-bottom: 0rem !important;
+	padding-left: 0rem !important;
+}
+.margin-right {
+	margin-top: 0rem !important;
+	margin-bottom: 0rem !important;
+	margin-left: 0rem !important;
+}
+.padding-right {
+	padding-top: 0rem !important;
+	padding-bottom: 0rem !important;
+	padding-left: 0rem !important;
+}
+.margin-bottom {
+	margin-top: 0rem !important;
+	margin-right: 0rem !important;
+	margin-left: 0rem !important;
+}
+.padding-bottom {
+	padding-top: 0rem !important;
+	padding-right: 0rem !important;
+	padding-left: 0rem !important;
+}
+.margin-left {
+	margin-top: 0rem !important;
+	margin-right: 0rem !important;
+	margin-bottom: 0rem !important;
+}
+.padding-left {
+	padding-top: 0rem !important;
+	padding-right: 0rem !important;
+	padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+	margin-top: 0rem !important;
+	margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+	padding-top: 0rem !important;
+	padding-bottom: 0rem !important;
+}
+.margin-vertical {
+	margin-right: 0rem !important;
+	margin-left: 0rem !important;
+}
+.padding-vertical {
+	padding-right: 0rem !important;
+	padding-left: 0rem !important;
+}
+.grain {
+	pointer-events: none;
+}
+
+/* Identify empty links and put the yellow outline in the designer only */
+html.wf-design-mode [href="#"] {
+	outline: 3px solid yellow !important;
+}
+
+@media screen and (min-width: 768px) {
+	[item-style="wide"] {
+		grid-column-start: span 2;
+		grid-column-end: span 2;
+		grid-row-start: span 1;
+		grid-row-end: span 1;
+	}
+	[item-style="tall"] {
+		grid-column-start: span 1;
+		grid-column-end: span 1;
+		grid-row-start: span 2;
+		grid-row-end: span 2;
+	}
+}
+
+.mht-home-hero-title .is-home-hero-h1:nth-child(1) .home-hero_h1 {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	-moz-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	-ms-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	transform-style: preserve-3d;
+	filter: blur(2px);
+}
+.mht-home-hero-title .is-home-hero-h1:nth-child(2) .home-hero_h1 {
+	-webkit-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	-moz-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	-ms-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	transform-style: preserve-3d;
+	opacity: 0;
+	filter: blur(2px);
+}
+.mht-home-hero-title .is-home-hero-h1:nth-child(3) .home-hero_h1 {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	-moz-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	-ms-transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	transform: translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(-49deg)
+		rotateY(null) rotateZ(null) skew(0, 0);
+	transform-style: preserve-3d;
+	filter: blur(2px);
+}
+.mht-home-hero-ph span:nth-child(1) {
+	filter: blur(5px);
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	opacity: 0;
+}
+.mht-home-hero-ph span:nth-child(2) {
+	opacity: 0;
+	filter: blur(5px);
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+}
+.mht-home-hero-ph span:nth-child(3) {
+	filter: blur(5px);
+	opacity: 0;
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+}
+.mht-home-about-title .home-about_h2:nth-child(1) {
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	filter: blur(10px);
+	opacity: 0;
+}
+.mht-home-about-title .home-about_h2:nth-child(2) {
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	opacity: 0;
+	filter: blur(10px);
+}
+.mht-home-about-title .home-about_h2:nth-child(3) {
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	filter: blur(10px);
+	opacity: 0;
+}
+.mht-home-about-title .home-about_h2:nth-child(4) {
+	-webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	opacity: 0;
+	filter: blur(10px);
+}
+.home-about_h2 .mht-home-about-image {
+	-webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0)
+		rotateY(0) rotateZ(0) skew(0, 0);
+	-moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	-ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+		rotateZ(0) skew(0, 0);
+	filter: blur(0px);
+}
+
+.work_card-glow-background {
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+}
+.work_card-glow-background._2 {
+	left: calc(-100% - 24px);
+}
+.work_card-glow-background._3 {
+	top: calc(-100% - 24px);
+}
+.work_card-glow-background._4 {
+	left: calc(-100% - 24px);
+	top: calc(-100% - 24px);
+}
+
+[item-style="02/"].work_card-glow-background {
+	left: calc(-100% - 24px);
+}
+[item-style="03/"].work_card-glow-background {
+	top: calc(-100% - 24px);
+}
+[item-style="04/"].work_card-glow-background {
+	left: calc(-100% - 24px);
+	top: calc(-100% - 24px);
+}
+/* Add the default styles for .work_card-glow-background here if needed */
+.work_card-glow-background {
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+}
+
+.work_card-glow-background {
+	/* Default width when the number of children is not specified */
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+}
+
+/* Cards Border Glow */
+/* Add more styles for .work_card-glow-background here if needed */
+/* Example combo classes */
+._02 {
+	left: calc(-100% - 32px);
+}
+._03 {
+	top: calc(-100% - 32px);
+}
+._04 {
+	left: calc(-100% - 32px);
+	top: calc(-100% - 32px);
+}
+._05 {
+	top: calc(-200% - 32px);
+}
+._06 {
+	left: calc(-100% - 32px);
+	top: calc(-200% - 32px);
+}
+._07 {
+	top: calc(-300% - 32px);
+}
+._08 {
+	left: calc(-100% - 24px);
+	top: calc(-300% - 32px);
+}
