@@ -19,7 +19,7 @@ function ready(callback) {
 }
 
 // Lenis smooth scroll
-("use strict"); // fix lenis in safari
+("use strict");
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 if (!isSafari && Webflow.env("editor") === undefined) {
 	const lenis = new Lenis({
@@ -30,7 +30,6 @@ if (!isSafari && Webflow.env("editor") === undefined) {
 		normalizeWheel: false,
 		smoothTouch: false,
 	});
-
 	function raf(time) {
 		lenis.raf(time);
 		requestAnimationFrame(raf);
@@ -312,3 +311,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Update on window resize
 	window.addEventListener("resize", setCollectionListWidth);
 });
+
