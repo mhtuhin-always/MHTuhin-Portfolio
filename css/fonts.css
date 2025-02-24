@@ -1,0 +1,119 @@
+@font-face {
+	font-family: "Helveticanowvar";
+	src: url("../fonts/Helvetica.ttf") format("truetype");
+	font-weight: 50 1000;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue";
+	src: url("../fonts/RecklessNeue-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue";
+	src: url("../fonts/RecklessNeue-SemiBold.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue book";
+	src: url("../fonts/RecklessNeue-Book.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue";
+	src: url("../fonts/RecklessNeue-Thin.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue";
+	src: url("../fonts/RecklessNeue-Light.otf") format("opentype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue";
+	src: url("../fonts/RecklessNeue-Medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Recklessneue";
+	src: url("../fonts/RecklessNeue-Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Black.otf") format("opentype");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl book";
+	src: url("../fonts/SuisseIntl-Book.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Light.otf") format("opentype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Thin.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-SemiBold.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Suisseintl";
+	src: url("../fonts/SuisseIntl-Ultralight.otf") format("opentype");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
